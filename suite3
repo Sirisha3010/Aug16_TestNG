@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
-  <test name="Test">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel='tests'  thread-count="2">
+  <test thread-count="5" name="Test1">
     <classes>
-      <class name="TestNG_programs.Lab8_2_TestNG"/>
+      <class name="TestNG_program.NewTest1"/>
+       </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test2">
+    <classes>
+      
+      <class name="TestNG_program.NewTest2"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+ 
